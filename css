@@ -1,0 +1,203 @@
+/* Universal Styles */
+html {
+  font-size: 16px;
+}
+
+* {
+  /*border: 1px solid black;*/
+  padding: 0;
+  margin: 0;
+  font-family: "Karma";
+  font-weight: 400;
+  text-align: center;
+}
+
+h1, h2, h3 {
+    font-family: "Alegreya Sans SC";
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+a {
+    font-family: "Alegreya Sans SC";
+}
+
+a:active {
+    color: black
+}
+
+/* Header */
+header {
+  background-color: #a67b47;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /*height: 4rem;*/
+  align-items: center;
+  padding: .5rem;
+}
+
+@media only screen and (max-width: 700px) {
+    header {
+        justify-content: center;
+    }
+}
+
+.header-title {
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: white;
+    margin: .5rem;
+}
+
+.navbar {
+    margin-right: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.nav {
+    margin: .5rem;
+    color: white;
+}
+
+
+/* Banner */
+#banner-container {
+    height: 40rem;
+    background-image: url("https://pbs.twimg.com/media/EV_C9xTWsAk_ggO.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Mission */
+#mission-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #a67b47;
+}
+
+.mission {
+    background-color: white;
+    border-radius: 1rem;
+    width: 90%;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+/* Classes */
+#classes-container-container {
+    background-image: url("https://image.tmdb.org/t/p/w1280/sBU6AB37Uiv0nA7Xd5or07CtpyJ.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.classes-container {
+    padding: 4rem;
+}
+
+.classes-container > h2 {
+    display: inline-block;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: .75rem;
+    background-color: white;
+}
+
+.classes, .us {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.class, .us-box {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 1.5rem;
+    width: 18rem;
+    /*height: 18rem;*/
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.class > h3 {
+    text-decoration: underline;
+}
+
+.price {
+    color: black;
+}
+
+/* Who We Are */
+#us-container {
+    background-color: #a67b47;
+    padding: 2rem;
+}
+
+#us-container > h2 {
+    display: inline-block;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+/*.us {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.us-box {
+    width: 18rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1rem;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 1.5rem;
+}*/
+
+.us-box > * {
+    margin: 1rem;
+}
+
+.us-box > img {
+    width: 100%;
+    margin: 0;
+}
+
+/* Footer */
+footer {
+    background-color: hsl(33, 40%, 40%);
+}
+
+.footer-text {
+    color: white;
+    padding: .5rem;
+}
+
+.footer-contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.copyright {
+    font-size: .75rem;
+}
